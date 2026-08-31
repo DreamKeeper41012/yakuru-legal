@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete Your Account — Yakuru</title>
+<meta name="description" content="How to delete your Yakuru Ring account and data: in-app steps, a web request form, what is erased, what is retained, and how long it takes.">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="dot"></span> YAKURU</a>
+    <nav class="site">
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/delete-account" aria-current="page">Delete Account</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Delete Your Account &amp; Data</h1>
+  <p class="meta">App: Yakuru Ring · Developer: Yakuru Inc. · Last updated August 31, 2026</p>
+
+  <p class="lead">You can permanently delete your Yakuru account and the health data associated with it at any time. Deletion is free, takes effect immediately for app access, and requires no phone call or explanation.</p>
+
+  <h2 id="in-app">Option 1 — Delete from inside the app (fastest)</h2>
+  <ol class="steps">
+    <li><strong>Open the Yakuru Ring app</strong> and sign in to the account you want to delete.</li>
+    <li><strong>Go to Settings</strong> — tap your profile, then the settings icon.</li>
+    <li><strong>Open Data &amp; Privacy.</strong></li>
+    <li><strong>Tap &ldquo;Delete Account&rdquo;</strong> at the bottom of the screen.</li>
+    <li><strong>Confirm.</strong> You will be shown exactly what is erased and what is retained, then asked to confirm. Your account is scheduled for erasure and you are signed out.</li>
+  </ol>
+
+  <h2 id="web">Option 2 — Request deletion by email</h2>
+  <p>If you no longer have the app installed or cannot sign in, send us a deletion request. Fill this in and it will open your email app with the request ready to send — or write to <a href="mailto:privacy@yakuruhealth.com">privacy@yakuruhealth.com</a> directly.</p>
+
+  <form class="card" id="delete-form">
+    <label for="email" style="display:block;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:6px">Account email address</label>
+    <input id="email" name="email" type="email" required placeholder="you@example.com"
+      style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel-2);color:var(--text);font-size:15px;margin-bottom:16px">
+
+    <label for="name" style="display:block;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:6px">Name on the account (optional)</label>
+    <input id="name" name="name" type="text" placeholder="Your name"
+      style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel-2);color:var(--text);font-size:15px;margin-bottom:20px">
+
+    <button class="btn" type="submit">Compose deletion request</button>
+    <p style="font-size:13.5px;color:var(--muted);margin:14px 0 0">
+      This page does not transmit anything on its own — it opens your own email client with the request pre-filled, so nothing is sent until you press send. We verify ownership of the address before erasing anything.
+    </p>
+  </form>
+
+  <p>We acknowledge every request within 5 business days and complete it within 30 days, as required by GDPR, the CCPA and the Australian Privacy Principles.</p>
+
+  <h2 id="what-happens">What happens after you request deletion</h2>
+  <div class="warn">
+    <strong>There is a 30-day grace period.</strong> Your account is deactivated immediately, but erasure runs 30 days after the request. During those 30 days you can cancel by signing back in and choosing &ldquo;Cancel deletion&rdquo; in Settings &rarr; Data &amp; Privacy, or by emailing <a href="mailto:privacy@yakuruhealth.com">privacy@yakuruhealth.com</a>. After 30 days the erasure is irreversible and your data cannot be recovered.
+  </div>
+
+  <h2 id="deleted">Data that is permanently deleted</h2>
+  <ul>
+    <li>Your account and profile — name, email, date of birth, credentials, profile photo</li>
+    <li>All biometric and health data — HRV, heart rate, sleep, temperature, SpO&#8322;, activity, workouts, recovery and readiness history</li>
+    <li>Self-reported data — journal entries, mood and wellness logs, nutrition and hydration logs</li>
+    <li>Yakuru Brain AI coaching history and your personal AI profile</li>
+    <li>Paired device records — Ultra Ring pairings, watch sync state, connected integrations (Apple Health, Health Connect, Strava, WHOOP and similar) and their access tokens</li>
+    <li>Community content — posts, comments, likes and group memberships</li>
+    <li>Coach and team data sharing grants</li>
+    <li>Notification tokens and app usage records tied to you</li>
+  </ul>
+  <p class="note">Deleting your Yakuru account does not delete data held in third-party services you connected (for example Apple Health, Google Health Connect, Strava or WHOOP). Your revoked tokens stop Yakuru reading them; to remove data there, use those services directly.</p>
+
+  <h2 id="retained">Data that is retained, and for how long</h2>
+  <div class="scroller">
+  <table>
+    <thead><tr><th>What</th><th>Why</th><th>How long</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Order and payment records</td>
+        <td>Tax and accounting law requires transaction history to be kept. Your identity is stripped from these records, so they can no longer be linked back to you.</td>
+        <td>7 years, anonymized</td>
+      </tr>
+      <tr>
+        <td>Encrypted backups</td>
+        <td>Backups are retained on a rolling schedule and expire on their own; your data is not restored from them.</td>
+        <td>Purged within 90 days</td>
+      </tr>
+      <tr>
+        <td>Consent and deletion audit record</td>
+        <td>Evidence that you asked for erasure and that we carried it out, as regulators require.</td>
+        <td>Kept without personal identifiers</td>
+      </tr>
+      <tr>
+        <td>Aggregated, anonymized research data</td>
+        <td>Contains no personal identifiers and cannot be traced back to any individual.</td>
+        <td>Retained indefinitely</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2 id="subscriptions">Subscriptions</h2>
+  <p>Deleting your Yakuru account does not automatically cancel a subscription purchased through the App Store or Google Play. Cancel it in your store account first:</p>
+  <ul>
+    <li><strong>iOS</strong> — Settings &rarr; your name &rarr; Subscriptions &rarr; Yakuru &rarr; Cancel Subscription</li>
+    <li><strong>Android</strong> — Play Store &rarr; profile &rarr; Payments &amp; subscriptions &rarr; Subscriptions &rarr; Yakuru &rarr; Cancel</li>
+  </ul>
+
+  <h2 id="export">Prefer to export your data instead?</h2>
+  <p>You can download everything we hold about you as JSON or CSV before deleting, from <strong>Settings &rarr; Data &amp; Privacy &rarr; Export my data</strong>, or by emailing <a href="mailto:privacy@yakuruhealth.com">privacy@yakuruhealth.com</a>. Exporting does not delete anything.</p>
+
+  <h2 id="contact">Questions</h2>
+  <div class="card">
+    <p style="margin:0">
+      <strong>Privacy &amp; deletion requests</strong> — <a href="mailto:privacy@yakuruhealth.com">privacy@yakuruhealth.com</a><br>
+      <strong>Support</strong> — <a href="mailto:support@yakuruhealth.com">support@yakuruhealth.com</a><br>
+      <strong>Mail</strong> — Yakuru Inc. · 222 S Main St, Salt Lake City, UT 84101
+    </p>
+  </div>
+  <p>Full details of how we handle your data are in the <a href="/privacy">Privacy Policy</a>.</p>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    © 2026 Yakuru Inc. · <a href="/">Home</a> · <a href="/privacy">Privacy</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('delete-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var email = document.getElementById('email').value.trim();
+    var name = document.getElementById('name').value.trim();
+    var body =
+      'I am requesting permanent deletion of my Yakuru account and all associated personal data.\n\n' +
+      'Account email: ' + email + '\n' +
+      'Name on account: ' + (name || '(not provided)') + '\n\n' +
+      'I understand there is a 30-day grace period before erasure becomes irreversible, and that ' +
+      'order records are retained in anonymized form for 7 years as required by law.\n';
+    window.location.href =
+      'mailto:privacy@yakuruhealth.com' +
+      '?subject=' + encodeURIComponent('Account deletion request — Yakuru Ring') +
+      '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
