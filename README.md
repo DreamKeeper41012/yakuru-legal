@@ -49,4 +49,3 @@ the "last updated" date in each page current, and keep the contact addresses
 
 When a URL changes, add a redirect in `vercel.json` rather than breaking a link
 that a store listing or a shipped app build already points at.
-.
