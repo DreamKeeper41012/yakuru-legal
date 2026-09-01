@@ -42,6 +42,36 @@
       "source": "/pages/delete-account",
       "destination": "/delete-account",
       "permanent": true
+    },
+    {
+      "source": "/terms-of-service",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/tos",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/pages/terms",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/cookie-policy",
+      "destination": "/cookies",
+      "permanent": true
+    },
+    {
+      "source": "/cookie",
+      "destination": "/cookies",
+      "permanent": true
+    },
+    {
+      "source": "/pages/cookies",
+      "destination": "/cookies",
+      "permanent": true
     }
   ],
   "headers": [
