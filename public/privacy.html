@@ -20,7 +20,7 @@
 
 <main class="wrap">
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective April 20, 2026 · Applies to the Yakuru Ring app (iOS, Android, Wear OS), the Yakuru app for Garmin watches, the Ultra Ring, and yakuruhealth.com</p>
+  <p class="meta">Effective April 20, 2026 · Last updated October 20, 2026 · Applies to the Yakuru Ring app (iOS, Android, Wear OS), the Yakuru app for Garmin watches, the Ultra Ring, and yakuruhealth.com</p>
 
   <p class="lead">Your privacy is fundamental to Yakuru. This policy explains what data we collect, how we use it, who we share it with, and the rights you have over your personal information. We do not sell your data.</p>
 
@@ -31,6 +31,7 @@
       <a href="#data-we-collect">Data We Collect</a><br>
       <a href="#permissions">Device Permissions</a><br>
       <a href="#garmin">Yakuru for Garmin Watches</a><br>
+      <a href="#connected-ai">Connected AI</a><br>
       <a href="#how-we-use">How We Use Your Data</a><br>
       <a href="#what-we-dont">What We Do NOT Do</a><br>
       <a href="#sharing">Data Sharing</a><br>
@@ -61,6 +62,7 @@
     <li><strong>Account data</strong> — name, email, date of birth, password hash, profile photo</li>
     <li><strong>Biometric data</strong> — HRV, resting heart rate, temperature, SpO&#8322;, activity, sleep stages, workout sessions</li>
     <li><strong>Self-reported data</strong> — mood, wellness scores, journal entries, nutrition logs</li>
+    <li><strong>Photos and files you choose to have read</strong> — a photo of a meal, a menu or a supplement label, or a photo or PDF of a workout plan. Each is sent to our AI provider to be read and is not kept by Yakuru afterwards; only what you confirm on the next screen is saved.</li>
     <li><strong>Device data</strong> — Ultra Ring ID, firmware version, battery level, sync timestamps</li>
     <li><strong>Usage data</strong> — app interactions, feature usage, crash reports, performance metrics</li>
     <li><strong>Transaction data</strong> — subscription status, order history, payment method (last 4 digits only)</li>
@@ -76,9 +78,9 @@
       <tr><td>Health &amp; fitness data (Apple Health / Health Connect)</td><td>Read and write your biometric, sleep, workout and nutrition records so Yakuru can generate recovery and readiness insights.</td></tr>
       <tr><td>Bluetooth</td><td>Connect to your Yakuru Ring and to heart-rate broadcast devices during workouts.</td></tr>
       <tr><td>Location</td><td>Draw your live route during outdoor workouts, find the nearest clinics, and verify venue check-ins. Never used for advertising.</td></tr>
-      <tr><td>Camera</td><td>Scan meal barcodes, boarding passes and Yakuru Pass QR codes; photograph food for nutrition logging.</td></tr>
-      <tr><td>Photos</td><td>Set a profile photo and attach photos to meals and community posts.</td></tr>
-      <tr><td>Microphone &amp; speech recognition</td><td>Turn spoken meal and trip descriptions into text.</td></tr>
+      <tr><td>Camera</td><td>Scan meal barcodes, boarding passes, Yakuru Pass and team QR codes; photograph food for nutrition logging; photograph a menu, a supplement label or a workout plan to have it read.</td></tr>
+      <tr><td>Photos &amp; files</td><td>Set a profile photo, attach photos to meals, community posts and messages, and choose a photo or PDF of a workout plan to have it read.</td></tr>
+      <tr><td>Microphone &amp; speech recognition</td><td>Turn spoken meal and trip descriptions, workout voice commands and spoken questions to COACH into text. Speech is turned into text on your device; no audio is sent to Yakuru.</td></tr>
       <tr><td>Calendar</td><td>Read travel events to build jet lag protocols, and add Care appointments with reminders.</td></tr>
       <tr><td>Notifications</td><td>Deliver readiness alerts, protocol reminders and service announcements.</td></tr>
       <tr><td>Biometric unlock (Face ID / fingerprint)</td><td>Lock the app so your health data stays private if someone else picks up your phone. Handled entirely by your operating system — Yakuru never sees your biometric template.</td></tr>
@@ -109,6 +111,15 @@
   </table>
   </div>
 
+  <h2 id="connected-ai">Connected AI</h2>
+  <p>Connected AI lets you have an AI assistant you already use — Claude, ChatGPT, or an agent of your own — read your own Yakuru data, so you can ask it about your health in your own words. It is off until you set it up, and every part of it needs your AI consent first.</p>
+  <ul>
+    <li><strong>What you choose</strong> — you pick the topics the assistant may read (for example sleep, recovery, activity or cycle) and how far back. Only your own stored daily values are included.</li>
+    <li><strong>How it is shared</strong> — by connecting the assistant to Yakuru&rsquo;s connector (MCP) with your Yakuru sign-in, by creating an access token for your own agent, by downloading a data file, or by sending a single question with your numbers to the assistant. Each is something you start yourself; nothing is shared with an assistant you have not set up.</li>
+    <li><strong>Who receives it</strong> — the company behind the assistant you connect (for example Anthropic for Claude or OpenAI for ChatGPT) receives the data under your own account with them and handles it under their privacy policy, not this one.</li>
+    <li><strong>Your control</strong> — access tokens expire after 90 days; you can disconnect an assistant or revoke a token at any time, and the app lists what you have shared. Withdrawing your AI consent stops every assistant and token from reading at once.</li>
+  </ul>
+
   <h2 id="how-we-use">How We Use Your Data</h2>
   <p>We use your data exclusively to deliver and improve the Yakuru services you have subscribed to.</p>
   <ul>
@@ -135,8 +146,9 @@
   <h2 id="sharing">Data Sharing</h2>
   <p>We share your data only in these specific situations:</p>
   <ul>
-    <li>With service providers who process data on our behalf, under strict data processing agreements — <strong>Sahha</strong> (biometric and health data aggregation), <strong>Supabase</strong> (account data, application database and file storage), <strong>RevenueCat</strong> (subscription entitlements), <strong>Firebase</strong> (push notifications and crash diagnostics), <strong>Anthropic</strong> (Brain AI coaching), <strong>Stripe</strong> (payments) and <strong>Shopify</strong> (commerce)</li>
+    <li>With service providers who process data on our behalf, under strict data processing agreements — <strong>Sahha</strong> (biometric and health data aggregation), <strong>Supabase</strong> (account data, application database and file storage), <strong>RevenueCat</strong> (subscription entitlements), <strong>Firebase</strong> (push notifications and crash diagnostics), <strong>OpenAI</strong> (COACH AI coaching replies, and reading the meal, menu, supplement-label and workout photos and PDFs you choose), <strong>Perplexity</strong> (finding sources for figures in COACH replies), <strong>Anthropic</strong> (checking and finalising COACH replies before you see them), <strong>Stripe</strong> (payments) and <strong>Shopify</strong> (commerce)</li>
     <li>With coaches or teammates you explicitly authorize via granular sharing controls</li>
+    <li>With an AI assistant you connect yourself through <a href="#connected-ai">Connected AI</a> — only the topics you choose, and only while it stays connected</li>
     <li>With law enforcement when required by valid legal process</li>
     <li>In connection with a merger, acquisition, or sale of assets — with advance notice to affected users</li>
     <li>In aggregated, anonymized form for research partnerships (opt-in only)</li>
@@ -155,7 +167,7 @@
     <li><strong>Withdraw consent</strong> — turn off any data sharing you previously enabled</li>
     <li><strong>Non-discrimination</strong> — exercising these rights never affects your service</li>
   </ul>
-  <p class="note">Exercise any of these rights anytime from <strong>Settings &rarr; Data &amp; Privacy</strong> in the app, or by emailing <a href="mailto:privacy@yakuruhealth.com">privacy@yakuruhealth.com</a>. We respond within 30 days.</p>
+  <p class="note">Exercise any of these rights anytime from <strong>You &rarr; Data &amp; privacy</strong> in the app, or by emailing <a href="mailto:privacy@yakuruhealth.com">privacy@yakuruhealth.com</a>. We respond within 30 days.</p>
 
   <h2 id="security">Data Security</h2>
   <p>We invest heavily in protecting your data:</p>
@@ -177,7 +189,8 @@
     <li>Biometric trends — kept for up to 10 years for longevity science</li>
     <li>Support conversations — 3 years</li>
     <li>Financial records — 7 years (legal requirement)</li>
-    <li>Deleted accounts — purged from primary systems within 30 days, from backups within 90 days</li>
+    <li>Deleted accounts — erased from primary systems as soon as you confirm deletion in the app (requests by email within 30 days), and from backups within 90 days</li>
+    <li>Photos and files you have read (meals, menus, supplement labels, workout plans) — not kept by Yakuru once they have been read</li>
     <li>Anonymized research data — retained indefinitely with no personal identifiers</li>
   </ul>
 
@@ -189,7 +202,7 @@
   <p>Yakuru operates globally. Your data may be transferred to and stored in countries outside your home country, including:</p>
   <ul>
     <li>Australia (primary operations)</li>
-    <li>United States (Anthropic Claude API, Delaware incorporation)</li>
+    <li>United States (OpenAI, Perplexity and Anthropic AI services, Delaware incorporation)</li>
     <li>European Union (backup redundancy)</li>
   </ul>
   <p class="note">All international transfers are protected by Standard Contractual Clauses (SCCs) approved by the European Commission, ensuring GDPR-equivalent protection regardless of destination.</p>

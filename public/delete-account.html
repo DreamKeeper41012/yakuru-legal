@@ -20,17 +20,16 @@
 
 <main class="wrap">
   <h1>Delete Your Account &amp; Data</h1>
-  <p class="meta">App: Yakuru Ring · Developer: Yakuru Inc. · Last updated August 31, 2026</p>
+  <p class="meta">App: Yakuru Ring · Developer: Yakuru Inc. · Last updated October 20, 2026</p>
 
-  <p class="lead">You can permanently delete your Yakuru account and the health data associated with it at any time. Deletion is free, takes effect immediately for app access, and requires no phone call or explanation.</p>
+  <p class="lead">You can permanently delete your Yakuru account and the health data associated with it at any time. Deletion from the app is free, takes effect immediately, and requires no phone call or explanation.</p>
 
   <h2 id="in-app">Option 1 — Delete from inside the app (fastest)</h2>
   <ol class="steps">
     <li><strong>Open the Yakuru Ring app</strong> and sign in to the account you want to delete.</li>
-    <li><strong>Go to Settings</strong> — tap your profile, then the settings icon.</li>
-    <li><strong>Open Data &amp; Privacy.</strong></li>
+    <li><strong>Open the You tab</strong> and tap <strong>Data &amp; privacy</strong>.</li>
     <li><strong>Tap &ldquo;Delete All My Data&rdquo;</strong> — the red row under <em>Danger Zone</em>, at the bottom of the screen.</li>
-    <li><strong>Confirm.</strong> A dialog headed &ldquo;Delete All Your Data?&rdquo; shows exactly what is erased and what is retained; tap <strong>Delete Everything</strong>. Your account is scheduled for erasure and you are signed out.</li>
+    <li><strong>Confirm.</strong> A dialog headed &ldquo;Delete All Your Data?&rdquo; shows exactly what is erased and what is retained; tap <strong>Delete Everything</strong>. Your account and data are deleted straight away and you are signed out.</li>
   </ol>
 
   <h2 id="web">Option 2 — Request deletion by email</h2>
@@ -51,11 +50,11 @@
     </p>
   </form>
 
-  <p>We acknowledge every request within 5 business days and complete it within 30 days, as required by GDPR, the CCPA and the Australian Privacy Principles.</p>
+  <p>We acknowledge every emailed request within 5 business days and complete it within 30 days, as required by GDPR, the CCPA and the Australian Privacy Principles.</p>
 
   <h2 id="what-happens">What happens after you request deletion</h2>
   <div class="warn">
-    <strong>There is a 30-day grace period.</strong> Your account is deactivated immediately, but erasure runs 30 days after the request. During those 30 days you can cancel by signing back in and opening Settings &rarr; Data &amp; Privacy, where an &ldquo;Account deletion scheduled&rdquo; card offers <strong>Keep my account</strong>, or by emailing <a href="mailto:privacy@yakuruhealth.com">privacy@yakuruhealth.com</a>. After 30 days the erasure is irreversible and your data cannot be recovered.
+    <strong>Deletion is immediate and cannot be undone.</strong> When you confirm in the app, your account and data are erased straight away and you are signed out. There is no waiting period and no way to restore the account afterwards, so download your data first if you want a copy (see below). A request sent by email is carried out once we have verified that the address is yours.
   </div>
 
   <h2 id="deleted">Data that is permanently deleted</h2>
@@ -136,7 +135,7 @@
       'I am requesting permanent deletion of my Yakuru account and all associated personal data.\n\n' +
       'Account email: ' + email + '\n' +
       'Name on account: ' + (name || '(not provided)') + '\n\n' +
-      'I understand there is a 30-day grace period before erasure becomes irreversible, and that ' +
+      'I understand that erasure is permanent once carried out, and that ' +
       'order records are retained in anonymized form for 7 years as required by law.\n';
     window.location.href =
       'mailto:privacy@yakuruhealth.com' +
